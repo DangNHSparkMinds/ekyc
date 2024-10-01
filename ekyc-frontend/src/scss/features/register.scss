@@ -1,0 +1,185 @@
+.register-layout-wrapper {
+  padding: 80px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-primary;
+  width: 100%;
+  height: 100vh;
+
+  .register-container {
+    width: 40vw;
+    padding: 50px 0px;
+    min-width: 400px;
+    min-height: 600px;
+    border-radius: 10px;
+    background-color: #fff;
+  }
+
+  .register-header {
+    font-size: 38px;
+    font-weight: 800;
+    color: $color-primary;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .register-form {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .ant-form {
+    width: 80%;
+  }
+
+  .ant-input {
+    font-family: $base-font-family;
+    font-weight: 500;
+    min-width: 300px;
+    border: none;
+    border-radius: initial;
+    border-bottom: 1px solid lightgray;
+    transition: ease 0.3s;
+
+    &:focus-visible {
+      box-shadow: none;
+      border-color: $color-primary;
+    }
+  }
+
+  .ant-input-outlined.ant-input-status-error:focus {
+    box-shadow: none;
+  }
+
+  .ant-input-outlined.ant-input-status-error {
+    border: none;
+    border-radius: initial;
+    border-bottom: 1px solid #ff4d4f;
+  }
+
+  .ant-form-item .ant-form-item-explain-error {
+    padding: 0px 10px;
+  }
+
+  .submit-btn {
+    margin-top: 30px;
+    padding: 30px 0px;
+    max-width: 480px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background: $color-primary;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+      color: #fff !important;
+      background: $color-primary !important;
+      border: none;
+    }
+  }
+
+  .method-btn {
+    margin-top: 30px;
+    padding: 30px 0px;
+    width: 80%;
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    border-radius: 10px;
+    overflow: hidden;
+
+    svg {
+      position: absolute;
+      right: -30px;
+      transition: ease 0.3s;
+    }
+
+    &:hover {
+      color: $color-primary !important;
+      border-color: $color-primary !important;
+
+      svg {
+        position: absolute;
+        right: 10px;
+      }
+    }
+  }
+}
+
+.id-card {
+  color: $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+  width: 10rem;
+  border: dashed 2px $color-primary;
+  border-radius: 5px;
+}
+
+video {
+  transform: rotateY(180deg);
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.capture-btn {
+  padding: 0px;
+  color: #fff;
+  height: 46px;
+  width: 46px;
+  background: $color-primary;
+  font-size: 23px;
+  border-radius: 10px;
+
+  &:hover {
+    border: none;
+  }
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Định dạng overlay container */
+.overlay-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  /* Cho phép click xuyên qua */
+}
+
+/* Định dạng khung hình bầu dục */
+.oval-frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: 300px;
+  border: 2px dashed $color-primary;
+  /* Màu sắc của khung hình */
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  /* Căn giữa khung hình */
+  box-sizing: border-box;
+}
+
+.input-password {
+  .ant-input-password {
+    border: none;
+    border-radius: 0px;
+    border-bottom: 1px solid lightgray;
+  }
+}
